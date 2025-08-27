@@ -9,7 +9,6 @@ import java.util.List;
 public interface EmployeeRepository extends JpaRepository<Employee ,Long> {
 
     List<Employee> getEmployeeByIdAndName(Long id , String name);
-    List<Employee> getEmployeeByNameAndAddress(String name,String address);
     Employee getEmployeeByAddress(String address);
     List<Employee> getEmployeeByName(String name);
     List<Employee> getEmployeeByIdAndNameAndAddress(Long id,String name, String Address);
